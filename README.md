@@ -1,7 +1,7 @@
 ## Opioid deaths by race in the United States — 2000-2015
 
 ### Introduction
-Code for a [working paper](./report/paa_2017_paper/paa.pdf) and [presentation](./report/paa_2017/presentation/paa_2017.pdf) given at PAA 2017, examining differences in opioid deaths by race/ethnicity and by poly-drug use. 
+Code for a [working paper](./report/paa_2017_paper/paa.pdf) and [presentation](./report/paa_2017_presentation/paa_2017.pdf) given at PAA 2017, examining differences in opioid deaths by race/ethnicity and by poly-drug use. 
 
 Issues should be submitted [via Github](https://github.com/MJAlexander/opioid-mcd/issues) or email.
 
@@ -27,7 +27,7 @@ The script will check to see if you already have downloaded and/or processed dat
 
 Please note that even with a reasonably fast internet connection and processor, going from zero data to paper plots will take (at least) an hour or so. 
 
-Lastly, an additional presentation was given at UMass Amherst. To reproduce those plots, just run `./reports/umass_presnetaiton/0_reproduce_amherst.R`
+Lastly, an additional presentation was given at UMass Amherst. To reproduce those plots, just run `./reports/umass_presentation/0_generate_amherst_plots.R`
 
 ### Authors
 - [Monica Alexander](http://monicaalexander.com) ([GitHub](https://github.com/MJAlexander))
