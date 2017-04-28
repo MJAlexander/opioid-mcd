@@ -46,16 +46,16 @@ adj_ucod <- ggplot(data = filter(adj_deaths_ucod,
 ggsave(adj_ucod, filename = './report/paa_2017_paper/plots/paper_fig3_ucod_adjusted.pdf', 
        height = 4, width = 8, scale = 1)
 
-adj_ucod_ci <- add_ci(adj_ucod, fill_var = "ucod", palette = "Dark2", 
-                      p_title = "Underlying\nCause of Death")
-ggsave(adj_ucod_ci, filename = './report/paa_2017_paper/plots/paper_fig3_ucod_adjusted_ci.pdf', 
-       height = 4, width = 8, scale = 1)
+# adj_ucod_ci <- add_ci(adj_ucod, fill_var = "ucod", palette = "Dark2", 
+#                       p_title = "Underlying\nCause of Death")
+# ggsave(adj_ucod_ci, filename = './report/paa_2017_paper/plots/paper_fig3_ucod_adjusted_ci.pdf', 
+#        height = 4, width = 8, scale = 1)
 
-adj_ucod_v <- add_vline(adj_ucod)
-ggsave(adj_ucod_v, filename = './report/paa_2017_paper/plots/paper_fig3_ucod_adjusted_v.pdf', 
-       height = 4, width = 8, scale = 1)
+# adj_ucod_v <- add_vline(adj_ucod)
+# ggsave(adj_ucod_v, filename = './report/paa_2017_paper/plots/paper_fig3_ucod_adjusted_v.pdf', 
+#        height = 4, width = 8, scale = 1)
 
-adj_ucod_ci_v <- add_ci(adj_ucod_v, fill_var = "ucod", palette = "Dark2", 
-                      p_title = "Underlying\nCause of Death")
-ggsave(adj_ucod_ci, filename = './report/paa_2017_paper/plots/paper_fig3_ucod_adjusted_ci_v.pdf', 
-       height = 4, width = 8, scale = 1)
+# adj_ucod_ci_v <- add_ci(adj_ucod_v, fill_var = "ucod", palette = "Dark2", 
+#                       p_title = "Underlying\nCause of Death")
+# ggsave(adj_ucod_ci, filename = './report/paa_2017_paper/plots/paper_fig3_ucod_adjusted_ci_v.pdf', 
+#        height = 4, width = 8, scale = 1)

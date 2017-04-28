@@ -53,8 +53,8 @@ nood_plot <- ggplot(data = prop_total_deaths,
     labs(title = "Drug-related mortality rate", 
          subtitle = "By Opioid/non-opioid, 2000-2015",
          x = NULL, y = "Mortality rate (per 100,000)")
-ggsave(nood_plot, filename = "./report/paa_2017_paper/plots/paper_fig1_nood.pdf", 
-       height = 4, width = 4, scale = 1)
+# ggsave(nood_plot, filename = "./report/paa_2017_paper/plots/paper_fig1_nood.pdf", 
+#        height = 4, width = 4, scale = 1)
 
 ## Add vline
 nood_plot_v <- add_vline(nood_plot)
@@ -62,10 +62,10 @@ ggsave(nood_plot_v, filename = "./report/paa_2017_paper/plots/paper_fig1_nood_v.
        height = 4, width = 4, scale = 1)
 
 ## CI versions
-nood_plot_ci <- add_ci(nood_plot, fill_var = "measure_cat", palette = "Dark2")
-ggsave(nood_plot_ci, filename = "./report/paa_2017_paper/plots/paper_fig1_nood_ci.pdf", 
-       height = 4, width = 4, scale = 1)
+# nood_plot_ci <- add_ci(nood_plot, fill_var = "measure_cat", palette = "Dark2")
+# ggsave(nood_plot_ci, filename = "./report/paa_2017_paper/plots/paper_fig1_nood_ci.pdf", 
+#        height = 4, width = 4, scale = 1)
 
-nood_plot_v_ci <- add_vline(nood_plot_ci)
-ggsave(nood_plot_v_ci, filename = "./report/paa_2017_paper/plots/paper_fig1_nood_v_ci.pdf", 
-       height = 4, width = 4, scale = 1)
+# nood_plot_v_ci <- add_vline(nood_plot_ci)
+# ggsave(nood_plot_v_ci, filename = "./report/paa_2017_paper/plots/paper_fig1_nood_v_ci.pdf", 
+#        height = 4, width = 4, scale = 1)

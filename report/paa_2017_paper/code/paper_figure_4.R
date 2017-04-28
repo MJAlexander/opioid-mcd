@@ -55,17 +55,17 @@ ggsave(t4_adj_plots_race_lines,
        filename = './report/paa_2017_paper/plots/paper_fig4_t40_adjusted_race_lines.pdf', 
        height = 4, width = 8, scale = 1)
 
-t4_adj_plots_race_lines_ci <- add_ci(t4_adj_plots_race_lines)
-ggsave(t4_adj_plots_race_lines_ci, 
-       filename = './report/paa_2017_paper/plots/paper_fig4_t40_adjusted_race_lines_ci.pdf', 
-       height = 4, width = 8, scale = 1)
+# t4_adj_plots_race_lines_ci <- add_ci(t4_adj_plots_race_lines)
+# ggsave(t4_adj_plots_race_lines_ci, 
+#        filename = './report/paa_2017_paper/plots/paper_fig4_t40_adjusted_race_lines_ci.pdf', 
+#        height = 4, width = 8, scale = 1)
 
-t4_adj_plots_race_lines_v <- add_vline(t4_adj_plots_race_lines)
-ggsave(t4_adj_plots_race_lines_v, 
-       filename = './report/paa_2017_paper/plots/paper_fig4_t40_adjusted_race_lines_v.pdf', 
-       height = 4, width = 8, scale = 1)
+# t4_adj_plots_race_lines_v <- add_vline(t4_adj_plots_race_lines)
+# ggsave(t4_adj_plots_race_lines_v, 
+#        filename = './report/paa_2017_paper/plots/paper_fig4_t40_adjusted_race_lines_v.pdf', 
+#        height = 4, width = 8, scale = 1)
 
-t4_adj_plots_race_lines_v_ci <- add_ci(t4_adj_plots_race_lines_v)
-ggsave(t4_adj_plots_race_lines_v_ci, 
-       filename = './report/paa_2017_paper/plots/paper_fig4_t40_adjusted_race_lines_v_ci.pdf', 
-       height = 4, width = 8, scale = 1)
+# t4_adj_plots_race_lines_v_ci <- add_ci(t4_adj_plots_race_lines_v)
+# ggsave(t4_adj_plots_race_lines_v_ci, 
+#        filename = './report/paa_2017_paper/plots/paper_fig4_t40_adjusted_race_lines_v_ci.pdf', 
+#        height = 4, width = 8, scale = 1)

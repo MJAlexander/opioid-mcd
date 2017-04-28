@@ -67,8 +67,8 @@ p_ma_2_or_more <- ggplot(prop,
     labs(y = "Proportion", 
          x = NULL, 
          title = "Proportion of deaths with two or more opioids")
-ggsave(p_ma_2_or_more, filename =  "./report/paa_2017_paper/plots/paper_fig8_prop_2_more.pdf", 
-       height = 4, width = 4, scale = 1)
+# ggsave(p_ma_2_or_more, filename =  "./report/paa_2017_paper/plots/paper_fig8_prop_2_more.pdf", 
+#        height = 4, width = 4, scale = 1)
 
 p_ma_2_or_more_v <- add_vline(p_ma_2_or_more)
 ggsave(p_ma_2_or_more_v, filename =  "./report/paa_2017_paper/plots/paper_fig8_prop_2_more_v.pdf", 
@@ -91,9 +91,9 @@ p_ma_2_or_more_ci <- ggplot(prop,
     labs(y = "Proportion", 
          x = NULL, 
          title = "Proportion of deaths with two or more opioids")
-ggsave(p_ma_2_or_more_ci, filename =  "./report/paa_2017_paper/plots/paper_fig8_prop_2_more_ci.pdf", 
-       height = 4, width = 4, scale = 1)
+# ggsave(p_ma_2_or_more_ci, filename =  "./report/paa_2017_paper/plots/paper_fig8_prop_2_more_ci.pdf", 
+#        height = 4, width = 4, scale = 1)
 
-p_ma_2_or_more_ci_v <- add_vline(p_ma_2_or_more_ci)
-ggsave(p_ma_2_or_more_ci_v, filename =  "./report/paa_2017_paper/plots/paper_fig8_prop_2_more_ci_v.pdf", 
-       height = 4, width = 4, scale = 1)
+# p_ma_2_or_more_ci_v <- add_vline(p_ma_2_or_more_ci)
+# ggsave(p_ma_2_or_more_ci_v, filename =  "./report/paa_2017_paper/plots/paper_fig8_prop_2_more_ci_v.pdf", 
+#        height = 4, width = 4, scale = 1)

@@ -35,8 +35,8 @@ ggsave(asmr_by_race_2_f,
        filename = "./report/paa_2017_paper/plots/paper_fig5_asmr_race_all.pdf", 
        width = 8, height = 4, scale = 1)
 
-asmr_by_race_2_f_w <- asmr_by_race_2_f + 
-    geom_errorbar(aes(ymin = lo_ci, ymax = hi_ci, color = year), width = .25) 
-ggsave(asmr_by_race_2_f_w, 
-       filename = "./report/paa_2017_paper/plots/paper_fig5_asmr_race_all_errorbars.pdf", 
-       width = 8, height = 4, scale = 1)
+# asmr_by_race_2_f_w <- asmr_by_race_2_f + 
+#     geom_errorbar(aes(ymin = lo_ci, ymax = hi_ci, color = year), width = .25) 
+# ggsave(asmr_by_race_2_f_w, 
+#        filename = "./report/paa_2017_paper/plots/paper_fig5_asmr_race_all_errorbars.pdf", 
+#        width = 8, height = 4, scale = 1)
