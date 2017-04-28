@@ -48,15 +48,15 @@ ggsave(adj_overall_v,
        filename = './report/paa_2017_paper/plots/paper_fig2_overall_adjusted_v.pdf', 
        height = 4, width = 4, scale = 1)
 
-adj_overall_ci <- add_ci(adj_overall)
-ggsave(adj_overall_ci, 
-       filename = './report/paa_2017_paper/plots/paper_fig2_overall_adjusted_ci.pdf', 
-       height = 4, width = 4, scale = 1)
+# adj_overall_ci <- add_ci(adj_overall)
+# ggsave(adj_overall_ci, 
+#        filename = './report/paa_2017_paper/plots/paper_fig2_overall_adjusted_ci.pdf', 
+#        height = 4, width = 4, scale = 1)
 
-adj_overall_ci_v <- add_vline(adj_overall_ci)
-ggsave(adj_overall_ci_v, 
-       filename = './report/paa_2017_paper/plots/paper_fig2_overall_adjusted_ci_v.pdf', 
-       height = 4, width = 4, scale = 1)
+# adj_overall_ci_v <- add_vline(adj_overall_ci)
+# ggsave(adj_overall_ci_v, 
+#        filename = './report/paa_2017_paper/plots/paper_fig2_overall_adjusted_ci_v.pdf', 
+#        height = 4, width = 4, scale = 1)
 
  ## RELATIVE
 rel_adj_deaths_overall <- relativizer(adj_deaths_overall)
@@ -71,21 +71,21 @@ rel_adj_overall <- ggplot(data = rel_adj_deaths_overall,
          subtitle = "2000-2015",
          x = NULL, 
          y = "Relative risk (non-Hispanic white / non-Hispanic black)")
-ggsave(rel_adj_overall, 
-       filename = './report/paa_2017_paper/plots/paper_fig2_relative_risk.pdf', 
-       height = 4, width = 4, scale = 1)
+# ggsave(rel_adj_overall, 
+#        filename = './report/paa_2017_paper/plots/paper_fig2_relative_risk.pdf', 
+#        height = 4, width = 4, scale = 1)
 
-rel_adj_overall_ci <- add_ci(rel_adj_overall, fill_var = NULL)
-ggsave(rel_adj_overall_ci, 
-       filename = './report/paa_2017_paper/plots/paper_fig2_relative_risk_ci.pdf', 
-       height = 4, width = 4, scale = 1)
+# rel_adj_overall_ci <- add_ci(rel_adj_overall, fill_var = NULL)
+# ggsave(rel_adj_overall_ci, 
+#        filename = './report/paa_2017_paper/plots/paper_fig2_relative_risk_ci.pdf', 
+#        height = 4, width = 4, scale = 1)
 
 rel_adj_overall_v <- add_vline(rel_adj_overall)
 ggsave(rel_adj_overall_v, 
        filename = './report/paa_2017_paper/plots/paper_fig2_relative_risk_v.pdf', 
        height = 4, width = 4, scale = 1)
 
-rel_adj_overall_ci_v <- add_vline(rel_adj_overall_ci)
-ggsave(rel_adj_overall_ci_v, 
-       filename = './report/paa_2017_paper/plots/paper_fig2_relative_risk_ci_v.pdf', 
-       height = 4, width = 4, scale = 1)
+# rel_adj_overall_ci_v <- add_vline(rel_adj_overall_ci)
+# ggsave(rel_adj_overall_ci_v, 
+#        filename = './report/paa_2017_paper/plots/paper_fig2_relative_risk_ci_v.pdf', 
+#        height = 4, width = 4, scale = 1)
