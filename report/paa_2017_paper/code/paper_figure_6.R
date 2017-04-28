@@ -38,7 +38,7 @@ ggsave(age_spec_over_time_race,
        filename = './report/paa_2017_paper/plots/paper_fig6_age_spec_by_race.pdf', 
        width = 8, height = 5.5, scale = 1)
 
-age_spec_over_time_race_ci <- add_ci(age_spec_over_time_race)
-ggsave(age_spec_over_time_race_ci, 
-       filename = './report/paa_2017_paper/plots/paper_fig6_age_spec_by_race_ci.pdf', 
-       width = 8, height = 5.5, scale = 1)
+# age_spec_over_time_race_ci <- add_ci(age_spec_over_time_race)
+# ggsave(age_spec_over_time_race_ci, 
+#        filename = './report/paa_2017_paper/plots/paper_fig6_age_spec_by_race_ci.pdf', 
+#        width = 8, height = 5.5, scale = 1)
