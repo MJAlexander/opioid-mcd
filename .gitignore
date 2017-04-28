@@ -1,0 +1,13 @@
+data/*
+.Rproj.user
+*.Rproj
+.RData
+.Rhistory
+raw_data/*
+*.aux
+*.toc
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz

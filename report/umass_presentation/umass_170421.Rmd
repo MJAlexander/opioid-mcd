@@ -1,0 +1,161 @@
+---
+title: "Opioid Deaths by Race in the United States, 2000--2015"
+author: "Monica Alexander \\ Magali Barbieri \\ Mathew Kiang"
+date: "April 21, 2017"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+- Motivation
+- Aims
+- Data
+- Findings
+- Summary
+- Future work
+
+## Motivation
+\centering
+\includegraphics[width=0.95\textwidth]{./plots/fig1_nood_v_ci.pdf}
+
+## Motivation
+\centering
+\includegraphics[width=1.2\textwidth]{headline.pdf}
+
+## Motivation
+
+\centering
+\includegraphics[width=0.5\textwidth]{./plots/fig2_overall_adjusted_ci_v}
+\includegraphics[width=0.5\textwidth]{./plots/fig2_relative_risk_ci_v.pdf}
+
+## Aims
+Gain a better understanding how opioid deaths differ **by race** and what has contributed to the change in trends over time. 
+
+**Stratify by age** and look at 
+
+- Underlying cause of death
+- Deaths by opioid type
+- Presence of multiple opioids
+
+Motivate future research to better target health policy and rehabilitation programs in different areas and for different subpopulations.
+
+## Data and approach
+- Multiple cause of death microdata, 2000--2015
+    - Deaths are coded according to ICD-10
+    - Underlying cause of death and up to twenty additional contributory causes
+- Restrict analysis to non-Hispanic whites and non-Hispanic black population
+- Overall mortality rates are age-standardized using 10-year age groups and the 2000 Census population as a standard
+- Calculation of stochastic standard errors 
+    - For death rates: Poisson approximation to normal
+    - For proportions: Wilson method for binomial confidence intervals
+
+## Defining opioid-related deaths
+Opioid poisoning T-codes:
+
+- T400: Opium
+- T401: Heroin
+- T402: Other natural and semi-synthetic opioids
+- T403: Methadone
+- T404: Other synthetic opioids 
+- T406: Unspecified
+
+1. Drug overdose deaths: combination of T-codes and underlying cause of overdose: X40-44, X60-64, Y10-14, X85
+2. Mental and behavioral complications due to opioid use (F110--F119)
+3. Other deaths with an opioid T-code as contibutory cause
+
+##  Key findings
+Three key observations came out of analysis:
+
+> 1. Main type of opioids underlying deaths has shifted 
+> 2. Age distribution of deaths differs by race
+> 3. Presence of multiple opioids has increased
+
+
+<!-- ## Deaths by underlying cause -->
+
+<!-- \centering -->
+<!-- \includegraphics[width=1.0\textwidth]{./plots/fig3_ucod_adjusted_ci_v.pdf} -->
+
+<!-- ## Deaths by underlying cause -->
+<!-- What are the main **underlying causes** associated with opioid deaths? -->
+
+<!-- - Accidental overdose due to opioids (X42) -->
+<!-- - Accidental overdose due to other or unspecified drugs also important (X44) -->
+<!-- - Suicide higher for white population (X64) -->
+
+## 1. Type of opioids underlying deaths has shifted 
+
+\centering
+\includegraphics[width=1.0\textwidth]{./plots/fig4_t40_adjusted_race_lines_v_ci.pdf}
+
+<!-- ## 1. Type of opioids underlying deaths has shifted  -->
+
+<!-- - The increase in the 2000--2010 period was more substantial for the white population and was due to prescription painkillers (mostly Vicodin, OxyContin and methadone).  -->
+<!-- - Since 2010, the rates of opioid-mortality increase for both the white and black populations have been largely due to heroin and fentanyl.  -->
+
+## 2. Age distribution of deaths differs by race
+
+\centering
+\includegraphics[width=1.0\textwidth]{./plots/fig5_asmr_race_all_errorbars.pdf}
+
+
+## 2. Age distribution of deaths differs by race
+\centering
+\includegraphics[width=1.0\textwidth]{./plots/fig7_t40_heroin_ci.pdf}
+
+
+<!-- ## 2. Age distribution of deaths differs by race -->
+<!-- - Younger age profile for white population compared to black popualation -->
+<!-- - For recent heroin/fentanyl increases, mortality rates decrease with age for white population, but increase with age for black population -->
+<!-- - Heroin deaths rates are similar or higher for black population for ages 40+ -->
+
+## 3. Presence of multiple opoids has increased
+\centering
+\includegraphics[width=1.0\textwidth]{./plots/fig8_prop_2_more_ci_v.pdf}
+
+
+## 3. Presence of multiple opoids has increased
+\centering
+\includegraphics[width=1.0\textwidth]{./plots/fig9_t401_combos_v_ci.pdf}
+
+
+<!-- ## 3. Presence of multiple opoids has increased -->
+<!-- - Increase in proportion of deaths with multiple opioids since 2013 matches spike in heroin/fentanyl -->
+<!-- - Proportion of non-heroin opioid deaths involving heroin increasing for both races -->
+<!-- - Higher proportion of black opioid deaths have multiple opioids -->
+
+
+## Summary
+1. The trend in opioid deaths since 2000 has two stages. 
+- 2000--2010: increase for the white population, driven by prescription opioids
+- 2010 onwards: 
+    - Exhibited a higher rate of increase in the opioid deaths
+    - Increases were similar for both the white and black populations
+    - Heroin and fentanyl-related opioids
+2. Increases in deaths due to heroin and fentanyl have occurred from deaths that involve a mixture of both drugs. 
+3. White population exhibiting a comparatively younger age profile.
+
+
+
+## Questions / future work
+1. How much of increase in heroin mortality is due to increased use versus increased potency?
+2. What is driving the differences in age by race?
+
+Drawing on:
+
+- More detailed multiple cause of death data with residence information
+- Data on prescriptions dispensed and drug use (e.g. National Survey of Drug Use and Health)
+
+## Thanks!
+All code to reproduce graphs can be found here:
+https://github.com/MJAlexander/opioid-mcd
+
+
+\includegraphics[width=0.3\textwidth]{demogseal2.png}
+\includegraphics[width=0.7\textwidth]{HarvardChan_logo_hrz_RGB.pdf}
+
+
+
