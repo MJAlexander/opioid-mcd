@@ -6,19 +6,22 @@ Code for a [working paper](./report/paa_2017_paper/paa.pdf) and [presentation](.
 Issues should be submitted [via Github](https://github.com/MJAlexander/opioid-mcd/issues) or email.
 
 ### Requirements
-Our code requires the following `R` packages:
+Our code requires the following `R` packages to reproduce paper and presentation plots:
 
 - `tidyverse`
-- `ggforce` (for exploratory plots)
 - `RColorBrewer`
-- `viridis`
 - `scales`
 - `binom`
 - `grid`
 
+And for the exploratory plots:
+
+- `ggforce`
+- `viridis`
+
 You can install these packages using the `./code/0_install_packages.R` script, but it does not run automatically in order to avoid forcing updates on the user.
 
-Note that presentation versions of the plots require the font "Arial Narrow" to be installed, and may **not** render as `PDF` properly unless the device is set to `cairo_pdf`.
+Note that presentation versions of the plots require the font "Arial Narrow" to be installed, and may not render as `PDF` properly unless the `device` is set to `cairo_pdf`.
 
 ### Reproducibility
 To reproduce paper or presentation plots (including downloading the raw multiple cause of death data, raw population count data, raw standard population data, and the processing of all raw data), just set your working directory to this folder and run `./code/0_reproduce_everything.R`. 
