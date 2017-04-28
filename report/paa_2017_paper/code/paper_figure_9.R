@@ -99,13 +99,13 @@ p_ma_t401_combo <- ggplot(data = reshaped_prop,
     labs(y = "Proportion", 
          x = NULL, 
          title = "Proportion of heroin (T401) deaths involving other opioids")
-ggsave(p_ma_t401_combo + facet_wrap(~ comb_401, nrow = 1), 
-       filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos.pdf", 
-       height = 4, width = 8, scale = 1)
+# ggsave(p_ma_t401_combo + facet_wrap(~ comb_401, nrow = 1), 
+#        filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos.pdf", 
+#        height = 4, width = 8, scale = 1)
 
-ggsave(p_ma_t401_combo + facet_wrap(~ comb_401, nrow = 1, scales = "free_y"), 
-       filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_free.pdf", 
-       height = 4, width = 8, scale = 1)
+# ggsave(p_ma_t401_combo + facet_wrap(~ comb_401, nrow = 1, scales = "free_y"), 
+#        filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_free.pdf", 
+#        height = 4, width = 8, scale = 1)
 
 ## Add vline version
 p_ma_t401_combo_v <- add_vline(p_ma_t401_combo)
@@ -113,9 +113,9 @@ ggsave(p_ma_t401_combo_v + facet_wrap(~ comb_401, nrow = 1),
        filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_v.pdf", 
        height = 4, width = 8, scale = 1)
 
-ggsave(p_ma_t401_combo_v + facet_wrap(~ comb_401, nrow = 1, scales = "free_y"), 
-       filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_free_v.pdf", 
-       height = 4, width = 8, scale = 1)
+# ggsave(p_ma_t401_combo_v + facet_wrap(~ comb_401, nrow = 1, scales = "free_y"), 
+#        filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_free_v.pdf", 
+#        height = 4, width = 8, scale = 1)
 
 ## CI
 ## Paper figure 9 -- proportion of heroin deaths involving other opioids
@@ -138,20 +138,20 @@ p_ma_t401_combo <- ggplot(data = reshaped_prop,
     labs(y = "Proportion", 
          x = NULL, 
          title = "Proportion of heroin (T401) deaths involving other opioids") + facet_wrap(~ comb_401, nrow = 1)
-ggsave(p_ma_t401_combo + facet_wrap(~ comb_401, nrow = 1), 
-       filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_ci.pdf", 
-       height = 4, width = 8, scale = 1)
+# ggsave(p_ma_t401_combo + facet_wrap(~ comb_401, nrow = 1), 
+#        filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_ci.pdf", 
+#        height = 4, width = 8, scale = 1)
 
-ggsave(p_ma_t401_combo + facet_wrap(~ comb_401, nrow = 1, scales = "free_y"), 
-       filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_free_ci.pdf", 
-       height = 4, width = 8, scale = 1)
+# ggsave(p_ma_t401_combo + facet_wrap(~ comb_401, nrow = 1, scales = "free_y"), 
+#        filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_free_ci.pdf", 
+#        height = 4, width = 8, scale = 1)
 
 ## Add vline version
-p_ma_t401_combo_v <- add_vline(p_ma_t401_combo)
-ggsave(p_ma_t401_combo_v + facet_wrap(~ comb_401, nrow = 1), 
-       filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_v_ci.pdf", 
-       height = 4, width = 8, scale = 1)
+# p_ma_t401_combo_v <- add_vline(p_ma_t401_combo)
+# ggsave(p_ma_t401_combo_v + facet_wrap(~ comb_401, nrow = 1), 
+#        filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_v_ci.pdf", 
+#        height = 4, width = 8, scale = 1)
 
-ggsave(p_ma_t401_combo_v + facet_wrap(~ comb_401, nrow = 1, scales = "free_y"), 
-       filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_free_v_ci.pdf", 
-       height = 4, width = 8, scale = 1)
+# ggsave(p_ma_t401_combo_v + facet_wrap(~ comb_401, nrow = 1, scales = "free_y"), 
+#        filename =  "./report/paa_2017_paper/plots/paper_fig9_t401_combos_free_v_ci.pdf", 
+#        height = 4, width = 8, scale = 1)
