@@ -42,7 +42,7 @@ ggsave(age_t40_3,
        filename = './report/paa_2017_paper/plots/paper_fig7_t40_notpretty.pdf', 
        width = 8, height = 6, scale = 1.3)
 
-age_t40_3_ci <- add_ci(age_t40_3)
-ggsave(age_t40_3_ci, 
-       filename = './report/paa_2017_paper/plots/paper_fig7_t40_notpretty_ci.pdf', 
-       width = 8, height = 6, scale = 1.3)
+# age_t40_3_ci <- add_ci(age_t40_3)
+# ggsave(age_t40_3_ci, 
+#        filename = './report/paa_2017_paper/plots/paper_fig7_t40_notpretty_ci.pdf', 
+#        width = 8, height = 6, scale = 1.3)
