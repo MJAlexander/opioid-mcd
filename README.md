@@ -1,5 +1,7 @@
 ## Opioid deaths by race in the United States — 2000-2015
 
+![PAA 2017 Main Figure](./paa_2017_fig.png)
+
 ### Introduction
 Code for a [working paper](./report/paa_2017_paper/paa.pdf) and [presentation](./report/paa_2017_presentation/paa_2017.pdf) given at [PAA 2017](https://paa.confex.com/paa/2017/webprogrampreliminary/Paper16497.html), examining differences in opioid deaths by race/ethnicity and by poly-drug use. 
 
